@@ -5,8 +5,8 @@
 <h3 align="center">中学之前，孩子该学会的一切<br>中文本地化的儿童学习开放知识图谱 · 1600 个微主题 · 3200 条前置依赖</h3>
 
 <p align="center">
-<a href="https://github.com/marspang/kids-learning-graph-zh/releases"><img src="https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v0.1.0-f1c40f?style=for-the-badge" alt="版本"></a>
-<a href="https://github.com/withmarbleapp/os-taxonomy"><img src="https://img.shields.io/badge/%E4%B8%8A%E6%B8%B8-Marble%20Skill%20Taxonomy-2f81f7?style=for-the-badge" alt="上游"></a>
+<a href="https://github.com/marspang/kids-learning-graph-zh/releases"><img src="https://img.shields.io/badge/%E7%89%88%E6%9C%AC-0.1.0-f1c40f?style=for-the-badge" alt="版本"></a>
+<a href="https://github.com/withmarbleapp/os-taxonomy"><img src="https://img.shields.io/badge/%E4%B8%8A%E6%B8%B8-Marble%20%E8%AF%BE%E6%A0%87-2f81f7?style=for-the-badge" alt="上游"></a>
 <img src="https://img.shields.io/badge/%E8%A7%84%E6%A8%A1-1600%20%E5%BE%AE%E4%B8%BB%E9%A2%98%20%C2%B7%203200%20%E4%BE%9D%E8%B5%96-e35d6a?style=for-the-badge" alt="规模">
 <img src="https://img.shields.io/badge/%E5%B9%B4%E9%BE%84-4%E2%80%9315%20%E5%B2%81-3fb950?style=for-the-badge" alt="年龄">
 <img src="https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-ODbL%201.0%20%2B%20CC%20BY--SA%204.0-8b5cf6?style=for-the-badge" alt="协议">
