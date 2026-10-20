@@ -30,7 +30,7 @@
   .pane{position:fixed;z-index:3;pointer-events:none}
 
   /* ——— 左栏 ——— */
-  #left{left:36px;top:30px;width:382px;max-height:calc(100vh - 84px);overflow:auto;
+  #left{left:36px;top:30px;width:412px;max-height:calc(100vh - 84px);overflow:auto;
     pointer-events:auto;scrollbar-width:none}
   #left::-webkit-scrollbar{display:none}
 
@@ -38,15 +38,15 @@
     letter-spacing:.22em;color:#7C8FA8;margin:0 0 15px}
   .eyebrow b{width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
 
-  h1{margin:0;font-family:var(--serif);font-size:clamp(40px,5.4vw,62px);font-weight:600;
-    line-height:1.13;letter-spacing:.012em;color:#F4EFE5}
+  h1{margin:0;font-family:var(--serif);font-size:clamp(56px,7.2vw,92px);font-weight:500;
+    line-height:1.08;letter-spacing:.005em;color:#F4EFE5}
   h1 .dot{display:inline-block;width:.17em;height:.17em;border-radius:50%;background:var(--accent);
     margin-left:.10em;vertical-align:.06em}
 
-  .lead{margin:18px 0 0;font-family:var(--serif);font-size:15.5px;line-height:1.85;color:#D6DFEC}
+  .lead{margin:20px 0 0;font-family:var(--serif);font-size:16px;line-height:1.8;color:#D6DFEC}
   .lead b{font-weight:600;color:#F4EFE5}
-  .body-copy{margin:9px 0 0;font-family:var(--serif);font-size:13.5px;line-height:1.9;color:#A9B9CE}
-  .meta-line{margin:11px 0 0;font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:#6E82A0}
+  .body-copy{margin:10px 0 0;font-family:var(--serif);font-size:14px;line-height:1.85;color:#A9B9CE}
+  .meta-line{margin:12px 0 0;font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:#6E82A0}
 
   .cta{display:flex;align-items:center;gap:12px;margin:17px 0 0}
   .cta a.gh{display:inline-flex;align-items:center;gap:8px;text-decoration:none;
@@ -142,10 +142,10 @@
   #boot code{color:#9FB6D6;background:rgba(255,255,255,.06);border-radius:6px;padding:2px 7px;font-size:12.5px}
 
   @media (max-height:820px){
-    h1{font-size:clamp(38px,5vw,54px)}
+    h1{font-size:clamp(52px,6.6vw,80px)}
     .eyebrow{margin-bottom:12px}
-    .lead{margin-top:15px;font-size:15px;line-height:1.8}
-    .body-copy{margin-top:8px;font-size:13px;line-height:1.85}
+    .lead{margin-top:15px;font-size:15.5px;line-height:1.75}
+    .body-copy{margin-top:8px;font-size:13.5px;line-height:1.8}
     .meta-line{margin-top:9px;font-size:10.5px}
     .cta{margin-top:14px}
     .panel{margin-top:13px;padding:10px 12px 8px}
@@ -153,10 +153,10 @@
   }
   @media (max-height:700px){
     #left{max-height:calc(100vh - 64px);top:22px}
-    h1{font-size:clamp(36px,5vw,52px)}
+    h1{font-size:clamp(50px,6.8vw,76px)}
     .eyebrow{margin-bottom:10px;font-size:11px}
-    .lead{margin-top:11px;font-size:14.5px;line-height:1.72}
-    .body-copy{margin-top:7px;font-size:13px;line-height:1.78}
+    .lead{margin-top:11px;font-size:15px;line-height:1.7}
+    .body-copy{margin-top:7px;font-size:13.5px;line-height:1.75}
     .meta-line{margin-top:7px;font-size:10px}
     .cta{margin-top:11px}
     .cta a.gh{padding:7px 14px 7px 11px;font-size:11.5px}
@@ -169,16 +169,16 @@
     .search input{padding:7px 11px;font-size:12.5px}
   }
   @media (max-height:620px){
-    #left{max-height:calc(100vh - 56px);top:18px}
-    h1{font-size:clamp(38px,5.2vw,54px)}
-    .eyebrow{margin-bottom:9px}
-    .lead{margin-top:9px;font-size:14.5px;line-height:1.68}
-    .body-copy{font-size:12.5px;line-height:1.75;margin-top:6px}
-    .meta-line{margin-top:6px;font-size:9.5px}
-    .cta{margin-top:9px}
-    .panel{margin-top:8px;padding:8px 11px 6px}
+    #left{max-height:calc(100vh - 50px);top:16px}
+    h1{font-size:clamp(48px,7vw,72px)}
+    .eyebrow{margin-bottom:8px}
+    .lead{margin-top:8px;font-size:14.5px;line-height:1.62}
+    .body-copy{font-size:13px;line-height:1.68;margin-top:5px}
+    .meta-line{margin-top:5px;font-size:9.5px}
+    .cta{margin-top:8px}
+    .panel{margin-top:7px;padding:7px 11px 5px}
     button.lg{padding:2px 4px;font-size:11.5px}
-    .search{margin-top:7px}
+    .search{margin-top:6px}
     .search input{padding:6px 11px;font-size:12px}
   }
   @media (max-width:900px){
