@@ -39,7 +39,11 @@
 
 ## 它长什么样
 
-打开 **[在线知识地图](https://marspang.github.io/kids-learning-graph-zh/)**（或本地直接打开 `docs/index.html`）就能看到这张图：
+![知识地图：每一个点都是一个微主题，颜色代表学科，高度代表年龄，连线代表前置关系](media/curriculum-viz.gif)
+
+每个点是一个微主题，颜色代表学科；高度是年龄；每条线都是一条前置关系。点中任意概念，就能沿着它的前置路径一路回溯（[完整画质视频](media/curriculum-viz.mp4)）。
+
+打开 **[在线知识地图](https://marspang.github.io/kids-learning-graph-zh/)**（或本地直接打开 `docs/index.html`）就能自己转起来：
 
 - **高度 = 年龄**：竖轴严格按起始年龄从 4 岁排到 13 岁，越往上越难；
 - **水平位置 = 依赖关系**：靠力导向布局展开，前置关系越紧密的主题聚得越近；
@@ -48,6 +52,8 @@
 
 演示页是**单文件、零依赖**的纯静态页面（自研 canvas 渲染，不加载任何第三方库），丢进任何静态托管即可运行。
 数据契约与官方一致，因此任何针对上游写的可视化代码都能**直接复用**，只是文案换成了中文。
+
+> 上面这张动图由 `npm run gif` 自动录制：Playwright 打开页面的 `?rec=1` 录制模式逐帧截图，ffmpeg 合成 GIF 与 MP4，产物在 `media/`。
 
 <p align="center">
   <b>约 1600 个微主题 · 3200 条前置依赖 · 8 个学科 · 4–15 岁</b>
@@ -81,6 +87,7 @@ npm run pilot                     # 只翻 120 条，先看效果
 # 3) 生成 3D 图谱数据包（力导向布局 + 打包）
 npm run build
 npm run demo                      # 可选：把最新数据重新注入演示页 docs/index.html
+npm run gif                       # 可选：重录 README 动图（需 Playwright + ffmpeg）
 
 # 4) 校验（完整性 / 覆盖率 / 占位符）
 npm run validate
@@ -103,6 +110,8 @@ npm run validate
 | `--retranslate` | 忽略缓存，全部重翻 | 关闭 |
 | `LAYOUT_SEED` | 布局随机种子（可复现） | 20260720 |
 | `LAYOUT_TICKS` | 力导向迭代步数 | 420 |
+| `PLAYWRIGHT_PATH` | `npm run gif` 用的 Playwright 模块路径（没装在项目里时指定） | `playwright` |
+| `CHROME_PATH` | `npm run gif` 用的浏览器可执行文件（想复用已装的 Chrome 时指定） | Playwright 自带 |
 
 > 翻译进度写入 `data/zh/.cache.jsonl`（已 gitignore），**中断后重跑会自动续传**，不用从零再来。
 
@@ -132,6 +141,7 @@ npm run validate
 ```text
 kids-learning-graph-zh/
 ├── assets/banner/               README 首图（自包含 SVG）
+├── media/                       README 动图与视频（由 npm run gif 生成）
 ├── docs/index.html              3D 交互演示页（单文件、零依赖，可直接给 Pages）
 ├── data/
 │   ├── source/                  上游原始 JSON（含 UPSTREAM.json 版本锁定信息）
@@ -148,6 +158,7 @@ kids-learning-graph-zh/
 │   ├── glossary.tsv             术语表（保证全库译法一致）
 │   ├── build-graph.mjs          力导向算 3D 坐标 + 打包
 │   ├── build-demo.mjs           把 graphdata.json 注入演示页
+│   ├── build-gif.mjs            录制 README 动图（Playwright + ffmpeg）
 │   └── validate.mjs             完整性 / 覆盖率校验
 ├── LICENSE                      ODbL 1.0（数据层）
 ├── LICENSE-CONTENT              CC BY-SA 4.0（文本层）
