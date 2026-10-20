@@ -10,8 +10,9 @@
     "translate": "node --env-file-if-exists=.env scripts/translate.mjs",
     "pilot": "node --env-file-if-exists=.env scripts/translate.mjs --limit=120",
     "build": "node scripts/build-graph.mjs",
+    "demo": "node scripts/build-demo.mjs",
     "validate": "node scripts/validate.mjs",
-    "pipeline": "npm run fetch && npm run translate && npm run build && npm run validate"
+    "pipeline": "npm run fetch && npm run translate && npm run build && npm run demo && npm run validate"
   },
   "dependencies": {
     "d3-force-3d": "^3.0.5"
