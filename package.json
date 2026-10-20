@@ -1,0 +1,19 @@
+{
+  "name": "kids-learning-graph-zh",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "中文版儿童学习知识图谱 —— Marble Skill Taxonomy (v1) 的中文本地化衍生数据集",
+  "license": "ODbL-1.0",
+  "scripts": {
+    "fetch": "node scripts/fetch.mjs",
+    "translate": "node --env-file-if-exists=.env scripts/translate.mjs",
+    "pilot": "node --env-file-if-exists=.env scripts/translate.mjs --limit=120",
+    "build": "node scripts/build-graph.mjs",
+    "validate": "node scripts/validate.mjs",
+    "pipeline": "npm run fetch && npm run translate && npm run build && npm run validate"
+  },
+  "dependencies": {
+    "d3-force-3d": "^3.0.5"
+  }
+}

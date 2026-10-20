@@ -1,0 +1,107 @@
+# 术语表（Tab 分隔：英文 <TAB> 中文）
+# 用途：作为翻译提示词中的强制术语表，保证同一术语全库译法一致。
+# 说明：这里只做"提示"，脚本不会做硬替换；如需硬替换请另加 --fix-glossary。
+#
+# ---------- 学科（subject） ----------
+Science	科学
+Mathematics	数学
+English	英语
+History	历史
+Personal & Social Development	个人与社会发展
+Life Skills	生活技能
+Computing	计算机
+Learning to Learn	学会学习
+#
+# ---------- 领域（domain） ----------
+Artificial Intelligence	人工智能
+English Thinking	英语思维
+Grammar & Punctuation	语法与标点
+Handwriting & Transcription	书写与抄写
+Phonics & Word Reading	自然拼读与单词认读
+Reading Comprehension	阅读理解
+Speaking & Listening	口语与听力
+Spelling & Word Study	拼写与词汇学习
+Vocabulary	词汇
+Writing Composition	写作
+Ancient Egypt	古埃及
+Ancient Greece & Rome	古希腊与古罗马
+Historical Thinking	历史思维
+Medieval Times	中世纪
+Entrepreneurship	创业素养
+Money & Finance	金钱与理财
+Addition & Subtraction	加法与减法
+Algebra	代数
+Counting & Cardinality	计数与基数
+Data & Statistics	数据与统计
+Fractions	分数
+Geometry	几何
+Mathematical Thinking	数学思维
+Measurement	测量
+Multiplication & Division	乘法与除法
+Number Representation & Place Value	数的表示与位值
+Probability	概率
+Ratio & Proportion	比与比例
+Emotional Literacy	情绪认知
+Empathy & Social Awareness	共情与社会意识
+Friendship & Cooperation	友谊与合作
+Responsible Decision-Making	负责任地做决定
+Self-Awareness	自我认知
+Self-Regulation & Resilience	自我调节与抗挫力
+Animals of the World	世界动物
+Dinosaurs & Paleontology	恐龙与古生物学
+Earth's Systems	地球系统
+Ecosystems & Habitats	生态系统与栖息地
+Energy	能量
+Forces & Motion	力与运动
+Insects & Minibeasts	昆虫与小型无脊椎动物
+Matter & Materials	物质与材料
+Ocean Life	海洋生物
+Organisms & Life Processes	生物体与生命过程
+Polar Regions	极地
+Rainforests	雨林
+Scientific Inquiry	科学探究
+Space Exploration	太空探索
+Space Systems & Earth's History	天体系统与地球历史
+The Human Body	人体
+Volcanoes & Earthquakes	火山与地震
+Waves, Light & Sound	波、光与声
+Weather & Climate	天气与气候
+#
+# ---------- 常用教学术语 ----------
+prerequisite	前置知识
+mastery	掌握
+evidence	掌握证据
+assessment	评估
+misconception	常见误区
+phoneme	音素
+digraph	双字母组合
+blending	拼读
+rhyme	押韵
+place value	位值
+ten frame	十格框
+decompose	分解
+regrouping	进位与退位
+numerator	分子
+denominator	分母
+perimeter	周长
+symmetry	对称
+life cycle	生命周期
+habitat	栖息地
+food chain	食物链
+vibration	振动
+gravity	重力
+friction	摩擦力
+photosynthesis	光合作用
+evaporation	蒸发
+condensation	凝结
+orbit	轨道
+sentence fragment	句子片段
+capitalization	大写规则
+punctuation	标点
+noun	名词
+verb	动词
+adjective	形容词
+inference	推断
+prediction	预测
+retell	复述
+summary	摘要

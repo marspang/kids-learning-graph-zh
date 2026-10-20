@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-10-20T12:07:54.549Z",
+  "model": "deepseek-chat",
+  "baseUrl": "https://api.deepseek.com/v1",
+  "upstream": {
+    "upstream": "https://github.com/withmarbleapp/os-taxonomy",
+    "ref": "main",
+    "commit": "05af6444ded9c033b0a29ee6a9e842db9c2ba594",
+    "retrievedAt": "2026-10-20T11:54:17.034Z",
+    "taxonomyVersion": "v1",
+    "generatedAt": "2026-10-20T11:36:08.559Z",
+    "counts": {
+      "topics": 1599,
+      "topicsBySubject": {
+        "Computing": 21,
+        "English": 286,
+        "History": 90,
+        "Learning to Learn": 18,
+        "Life Skills": 37,
+        "Mathematics": 512,
+        "Personal & Social Development": 88,
+        "Science": 547
+      },
+      "dependencies": 3248,
+      "curricula": 7,
+      "curriculumStandards": 3261,
+      "topicStandardLinks": 2273,
+      "clusters": 176,
+      "teachingResearch": 1051
+    },
+    "licenses": {
+      "database": "ODbL 1.0",
+      "contentMarble": "CC BY-SA 4.0",
+      "curriculumStandards": "各上游自有许可，见 ATTRIBUTION.md"
+    },
+    "files": {
+      "topics.json": {
+        "bytes": 1699478,
+        "sha256": "2f0d8184f6743066825d56a02bd44f810310d787cc95aa15bc69ffc13da24b00"
+      },
+      "dependencies.json": {
+        "bytes": 704446,
+        "sha256": "d9df2d3326a964ae6db7abb15941eb62678ad322a231a4746b2e8d7e8346936a"
+      },
+      "curriculum-standards.json": {
+        "bytes": 1621982,
+        "sha256": "33a835abaafa68ed736f2102d5502ff030d6448dc55ae45718be05a78f5fc73f"
+      },
+      "clusters.json": {
+        "bytes": 58736,
+        "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
+      },
+      "teaching-research.json": {
+        "bytes": 23560561,
+        "sha256": "fcfc114ba8c01c7a2e3c597b8608b398b89821704703b694e0bdfa5594bb8a02"
+      }
+    }
+  },
+  "files": [
+    {
+      "outName": "topics.zh.json",
+      "translated": 4797,
+      "missing": 0,
+      "placeholder": 0
+    },
+    {
+      "outName": "dependencies.zh.json",
+      "translated": 3248,
+      "missing": 0,
+      "placeholder": 0
+    },
+    {
+      "outName": "clusters.zh.json",
+      "translated": 176,
+      "missing": 0,
+      "placeholder": 0
+    }
+  ],
+  "license": "衍生数据库，按 ODbL 1.0 开放；文本层继承 CC BY-SA 4.0。署名见 ATTRIBUTION.md。"
+}
