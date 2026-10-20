@@ -30,23 +30,23 @@
   .pane{position:fixed;z-index:3;pointer-events:none}
 
   /* ——— 左栏 ——— */
-  #left{left:34px;top:28px;width:344px;max-height:calc(100vh - 84px);overflow:auto;
+  #left{left:36px;top:30px;width:382px;max-height:calc(100vh - 84px);overflow:auto;
     pointer-events:auto;scrollbar-width:none}
   #left::-webkit-scrollbar{display:none}
 
-  .eyebrow{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:10.5px;
+  .eyebrow{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:11.5px;
     letter-spacing:.22em;color:#7C8FA8;margin:0 0 15px}
   .eyebrow b{width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
 
-  h1{margin:0;font-family:var(--serif);font-size:clamp(36px,4.5vw,54px);font-weight:600;
+  h1{margin:0;font-family:var(--serif);font-size:clamp(40px,5.4vw,62px);font-weight:600;
     line-height:1.13;letter-spacing:.012em;color:#F4EFE5}
   h1 .dot{display:inline-block;width:.17em;height:.17em;border-radius:50%;background:var(--accent);
     margin-left:.10em;vertical-align:.06em}
 
-  .lead{margin:18px 0 0;font-family:var(--serif);font-size:14.5px;line-height:1.85;color:#D6DFEC}
+  .lead{margin:18px 0 0;font-family:var(--serif);font-size:15.5px;line-height:1.85;color:#D6DFEC}
   .lead b{font-weight:600;color:#F4EFE5}
-  .body-copy{margin:9px 0 0;font-family:var(--serif);font-size:12.5px;line-height:1.9;color:#A9B9CE}
-  .meta-line{margin:11px 0 0;font-family:var(--sans);font-size:10.5px;letter-spacing:.06em;color:#6E82A0}
+  .body-copy{margin:9px 0 0;font-family:var(--serif);font-size:13.5px;line-height:1.9;color:#A9B9CE}
+  .meta-line{margin:11px 0 0;font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:#6E82A0}
 
   .cta{display:flex;align-items:center;gap:12px;margin:17px 0 0}
   .cta a.gh{display:inline-flex;align-items:center;gap:8px;text-decoration:none;
@@ -65,12 +65,12 @@
   .panel-title button:hover{color:#BFD0E8}
 
   button.lg{display:flex;align-items:center;gap:9px;width:100%;background:none;border:0;cursor:pointer;
-    padding:3.5px 5px;border-radius:8px;color:#CAD6E6;font-size:12px;font-family:var(--sans);
+    padding:3.5px 5px;border-radius:8px;color:#CAD6E6;font-size:13px;font-family:var(--sans);
     text-align:left;transition:background .15s,opacity .15s}
   button.lg:hover{background:rgba(255,255,255,.05)}
   button.lg i{width:8px;height:8px;border-radius:50%;flex:0 0 auto;box-shadow:0 0 8px currentColor}
   button.lg .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  button.lg .ct{color:#6E82A0;font-size:11px;font-variant-numeric:tabular-nums}
+  button.lg .ct{color:#6E82A0;font-size:11.5px;font-variant-numeric:tabular-nums}
   button.lg.off{opacity:.32}
   button.lg.off i{box-shadow:none}
 
@@ -141,26 +141,45 @@
     color:#8FA3BC;font-size:13.5px;line-height:2;padding:32px;font-family:var(--sans)}
   #boot code{color:#9FB6D6;background:rgba(255,255,255,.06);border-radius:6px;padding:2px 7px;font-size:12.5px}
 
-  @media (max-height:780px){
-    h1{font-size:46px}
-    .eyebrow{margin-bottom:11px}
-    .lead{margin-top:13px;font-size:13.5px;line-height:1.75}
-    .body-copy{margin-top:7px;font-size:12px;line-height:1.8}
-    .meta-line{margin-top:8px;font-size:9.5px}
-    .cta{margin-top:13px}
-    .panel{margin-top:12px;padding:10px 12px 7px}
-    .search{margin-top:10px}
+  @media (max-height:820px){
+    h1{font-size:clamp(38px,5vw,54px)}
+    .eyebrow{margin-bottom:12px}
+    .lead{margin-top:15px;font-size:15px;line-height:1.8}
+    .body-copy{margin-top:8px;font-size:13px;line-height:1.85}
+    .meta-line{margin-top:9px;font-size:10.5px}
+    .cta{margin-top:14px}
+    .panel{margin-top:13px;padding:10px 12px 8px}
+    .search{margin-top:11px}
   }
-  @media (max-height:640px){
-    #left{max-height:calc(100vh - 76px)}
-    h1{font-size:40px}
-    .body-copy,.meta-line{display:none}
-    .lead{margin-top:10px;font-size:12.5px;line-height:1.7}
+  @media (max-height:700px){
+    #left{max-height:calc(100vh - 64px);top:22px}
+    h1{font-size:clamp(36px,5vw,52px)}
+    .eyebrow{margin-bottom:10px;font-size:11px}
+    .lead{margin-top:11px;font-size:14.5px;line-height:1.72}
+    .body-copy{margin-top:7px;font-size:13px;line-height:1.78}
+    .meta-line{margin-top:7px;font-size:10px}
     .cta{margin-top:11px}
-    .panel{margin-top:10px;padding:9px 12px 6px}
-    button.lg{padding:2.5px 5px;font-size:11.5px}
+    .cta a.gh{padding:7px 14px 7px 11px;font-size:11.5px}
+    .panel{margin-top:10px;padding:9px 12px 7px}
+    .panel-title{font-size:9px;margin-bottom:5px}
+    #legend{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+    button.lg{padding:2.5px 4px;font-size:12px}
+    button.lg .ct{font-size:10.5px}
     .search{margin-top:9px}
-    .search input{padding:7px 11px}
+    .search input{padding:7px 11px;font-size:12.5px}
+  }
+  @media (max-height:620px){
+    #left{max-height:calc(100vh - 56px);top:18px}
+    h1{font-size:clamp(38px,5.2vw,54px)}
+    .eyebrow{margin-bottom:9px}
+    .lead{margin-top:9px;font-size:14.5px;line-height:1.68}
+    .body-copy{font-size:12.5px;line-height:1.75;margin-top:6px}
+    .meta-line{margin-top:6px;font-size:9.5px}
+    .cta{margin-top:9px}
+    .panel{margin-top:8px;padding:8px 11px 6px}
+    button.lg{padding:2px 4px;font-size:11.5px}
+    .search{margin-top:7px}
+    .search input{padding:6px 11px;font-size:12px}
   }
   @media (max-width:900px){
     #left{left:16px;right:16px;top:16px;width:auto;max-height:46vh;
@@ -265,8 +284,10 @@
   for (var i2 = 0; i2 < n; i2++) {
     deg[i2] = pre[i2].length + nxt[i2].length;
     rad[i2] = 1.45 + Math.sqrt(deg[i2]) * 0.86;
-    // 年龄锥形：越小越宽、越大越窄，视觉上收成花瓶形（数据本身仍是 y=年龄）
-    var taper = 0.60 + 0.40 * (ageMax - N[i2].a) / AGEN;
+    // 年龄锥形：越大越宽、越小越收，底部收成尖，形成原版的倒三角
+    var t = (N[i2].a - ageMin) / AGEN;
+    var taper = 0.18 + 0.82 * Math.pow(t, 0.5);
+    if (t > 0.85) taper *= 1 + 0.30 * (t - 0.85) / 0.15;   // 顶部外扩，让最上层成为最宽的一圈
     FX[i2] = N[i2].x * taper;
     FZ[i2] = N[i2].z * taper;
     // 同一年龄的节点原本完全共面，会形成生硬的横条；给 0.5 岁以内的确定性抖动
@@ -314,7 +335,8 @@
       OX = (leftLimit + rightLimit) / 2;
       OY = HH / 2;
       availW = Math.max(220, rightLimit - leftLimit);
-      availH = HH * 0.82;
+      // 顶部外扩后近端节点会被透视放大，留出余量，避免最上层被视口裁掉
+      availH = HH * 0.76;
     }
     S = Math.min(availW * 0.98 / (2 * maxRadial * XA), availH / DH);
     // 节点半径不直接跟随 S，否则小窗口下会缩成看不见的像素点
